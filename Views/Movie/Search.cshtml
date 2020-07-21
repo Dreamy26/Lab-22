@@ -1,5 +1,15 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿<form asp-controller="Movie" asp-action="SearchResultTitle" method="post">
+    Enter Title: <input type="text" name="title" />
+    <input type="submit" />
+</form>
+
+<form asp-controller="Movie" asp-action="SearchResultGenre" method="post">
+    <select name="genre">
+        <option value="Comedy">Comedy</option>
+        <option value="Horror">Horror</option>
+        <option value="Romance">Romance</option>
+        <option value="Sci-Fi">Sci-Fi</option>
+        <option value="Drama">Drama</option>
+    </select>
+    <input type="submit" value="Click it or Ticket" />
+</form>
